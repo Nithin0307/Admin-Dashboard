@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="search-bar-container">
+        <input type="text" id="search-bar" class="search-bar" placeholder="Search...">
+    <!--- <button id="search-icon" class="search-icon" onclick="handleSearch()">Search</button>-->
+        <label class="checkbox-label">
+            <input type="checkbox" id="toggle-all-checkbox" onchange="handleToggleAll()">
+            Select/Deselect All
+        </label>
+    </div>
+    <div id="table-container">
+        <!-- Table will be dynamically generated here -->
+    </div>
+    <div id="pagination-container">
+        <!-- Pagination buttons will be dynamically generated here -->
+    </div>
+    <button id="delete-selected" class="delete-selected" onclick="handleDeleteSelected()">Delete Selected</button>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+</html>
